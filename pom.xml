@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.gwtproject.modules</groupId>
+  <artifactId>gwt-modules</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>GWT Modulest BOM</name>
+  <description>BOM contining the latest versionof the GWT modules</description>
+  <url>https://github.com/gwtproject/gwt-modules</url>
+
+  <organization>
+    <name>The GWT Authors</name>
+    <url>https://github.com/gwtproject</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>The GWT Authors</name>
+      <organization>The GWT Project Authors</organization>
+      <url>https://github.com/gwtproject</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/gwtproject/gwt-modules.git</connection>
+    <developerConnection>scm:git:ssh://github.com/gwtproject/gwt-modules.git</developerConnection>
+    <url>https://github.com/gwtproject/gwt-modules/tree/master</url>
+  </scm>
+
+  <inceptionYear>2019</inceptionYear>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.gwtproject.callback</groupId>
+        <artifactId>gwt-callback</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+     <dependency>
+        <groupId>org.gwtproject.core</groupId>
+        <artifactId>gwt-core</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+     <dependency>
+        <groupId>org.gwtproject.dom</groupId>
+        <artifactId>gwt-dom-style-definitions</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+     <dependency>
+        <groupId>org.gwtproject.geolocation</groupId>
+        <artifactId>gwt-geolocation</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+     <dependency>
+        <groupId>org.gwtproject.regexp</groupId>
+        <artifactId>gwt-regexp</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.timer</groupId>
+        <artifactId>gwt-timer</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.typedarrays</groupId>
+        <artifactId>gwt-typedarrays</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
