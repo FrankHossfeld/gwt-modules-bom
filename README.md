@@ -15,7 +15,8 @@ To use the BOM inside your pom, add the following code snippet:
     </dependencies>
   </dependencyManagement>
 ```
-Add a dependncy definition for each dependency you would like to use inside your pom.
+Next, add a dependncy definition for each dependency you would like to use inside your pom.
+
 This example shows, how to add **gwt-timer** to your pom:
 ```xml
   <dependency>
