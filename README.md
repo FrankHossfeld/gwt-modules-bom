@@ -1,5 +1,5 @@
 # GWT Modules
-This BOM (Bill Of Materials) can be used to add the latest versions of GWT modules to your project.
+This BOM (Bill Of Materials) can be used to add the latest versions of GWT modules to your project. The versions referenced by this BOM have been tested and work well together.   
 
 To use the BOM inside your pom, add the following code snippet:
 ```xml
