@@ -20,7 +20,7 @@ Next, add a dependncy definition for each dependency you would like to use insid
 This example shows, how to add **gwt-timer** to your pom:
 ```xml
   <dependency>
-    <groupId>org.gwtproject.gwt-timer</groupid>
+    <groupId>org.gwtproject.timer</groupid>
     <artifactId>gwt-timer</artifactId>
   </dependency>
 ```
