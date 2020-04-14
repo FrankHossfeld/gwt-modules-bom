@@ -1,5 +1,5 @@
 # GWT Modules
-This BOM (Bill Of Materials) can be used to add the latest versions of GWT modules to your project. The versions included in this BOM have been tested together.   
+This BOM (Bill Of Materials) can be used to add the latest versions of GWT modules to your project. The versions included in this BOM have been tested together.
 
 To use the BOM inside your pom, add the following code snippet:
 ```xml
@@ -15,7 +15,7 @@ To use the BOM inside your pom, add the following code snippet:
     </dependencies>
   </dependencyManagement>
 ```
-Next, add a dependncy definition for each dependency you would like to use inside your pom.
+Next, add a dependency definition for each dependency you would like to use inside your pom.
 
 This example shows, how to add **gwt-timer** to your pom:
 ```xml
