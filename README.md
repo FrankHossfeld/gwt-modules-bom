@@ -30,12 +30,13 @@ Keep in mind, you do not need to add a **version**-tag.
 
 This is a list of the containing modules and their versions:
 
-| Module                            | Version               |
-|-----------------------------------|:---------------------:|
-| gwt-callback                      |  1.0-SNAPSHOT         |
-| gwt-core                          |  1.0-SNAPSHOT         |
-| gwt-dom-style-definitions         |  1.0-SNAPSHOT         |
-| gwt-geolocation                   |  1.0-SNAPSHOT         |
-| gwt-regexp                        |  1.0-SNAPSHOT         |
-| gwt-timer                         |  1.0-SNAPSHOT         |
-| gwt-core                          |  1.0-SNAPSHOT         |
+| Module                    |   Version    | Repo                                                                                                               |
+|:--------------------------|:------------:|:-------------------------------------------------------------------------------------------------------------------|
+| gwt-callback              | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-callback](https://github.com/gwtproject/gwt-callback)                           |
+| gwt-core                  | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-core](https://github.com/gwtproject/gwt-core)                                   |
+| gwt-dom-style-definitions | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-dom-style-definitions](https://github.com/gwtproject/gwt-dom-style-definitions) |
+| gwt-geolocation           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
+| gwt-regexp                | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-regexp](https://github.com/gwtproject/gwt-regexp)                               |
+| gwt-timer                 | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
+
+
