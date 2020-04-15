@@ -5,7 +5,7 @@
 
   <groupId>org.gwtproject.modules</groupId>
   <artifactId>gwt-modules</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-20200415-1204</version>
   <packaging>pom</packaging>
 
   <name>GWT Modulest BOM</name>

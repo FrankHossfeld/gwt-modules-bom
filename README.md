@@ -8,7 +8,7 @@ To use the BOM inside your pom, add the following code snippet:
       <dependency>
         <groupId>org.gwtproject.modules</groupId>
         <artifactId>gwt-modules</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-20200415-1204</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
