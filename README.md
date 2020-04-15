@@ -38,5 +38,6 @@ This is a list of the containing modules and their versions:
 | gwt-geolocation           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-regexp                | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-regexp](https://github.com/gwtproject/gwt-regexp)                               |
 | gwt-timer                 | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
+| gwt-typedarrays           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
 
 
