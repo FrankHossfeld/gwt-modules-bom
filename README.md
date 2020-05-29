@@ -32,12 +32,12 @@ This is a list of the containing modules and their versions:
 
 | Module                    |   Version    | Repo                                                                                                               |
 |:--------------------------|:------------:|:-------------------------------------------------------------------------------------------------------------------|
-| gwt-callback              | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-callback](https://github.com/gwtproject/gwt-callback)                           |
+| gwt-callback              |  1.0.0-RC-1  | [https://github.com/gwtproject/gwt-callback](https://github.com/gwtproject/gwt-callback)                           |
 | gwt-core                  | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-core](https://github.com/gwtproject/gwt-core)                                   |
-| gwt-dom-style-definitions | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-dom-style-definitions](https://github.com/gwtproject/gwt-dom-style-definitions) |
+| gwt-dom-style-definitions |  1.0.0-RC-1  | [https://github.com/gwtproject/gwt-dom-style-definitions](https://github.com/gwtproject/gwt-dom-style-definitions) |
 | gwt-geolocation           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-regexp                | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-regexp](https://github.com/gwtproject/gwt-regexp)                               |
-| gwt-timer                 | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
+| gwt-timer                 |  1.0.0-RC-1  | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
 | gwt-typedarrays           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
 
 
