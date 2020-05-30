@@ -28,7 +28,7 @@ Keep in mind, you do not need to add a **version**-tag.
 
 ## Current Versions
 
-This is a list of the containing modules and their versions:
+This is a list of modules and their versions contained in this BOM:
 
 | Module                    |   Version    | Repo                                                                                                               |
 |:--------------------------|:------------:|:-------------------------------------------------------------------------------------------------------------------|
@@ -40,4 +40,28 @@ This is a list of the containing modules and their versions:
 | gwt-timer                 |  1.0.0-RC-1  | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
 | gwt-typedarrays           | 1.0-SNAPSHOT | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
 
+## Dependency Matrix
 
+This is a list of modules and the dependencies to other moules:
+
+| Module                    | Depends on                              |
+|:--------------------------|:----------------------------------------|
+| gwt-activity              | gwt-place                               |
+| gwt-animation             | gwt-timer, gwt-core, gwt-dom            |
+| gwt-aria                  | gwt-core                                |
+| gwt-callback              | -                                       |
+| gwt-core                  | -                                       |
+| gwt-dom-style-definitions | -                                       |
+| gwt-editor                | gwt-event                               |
+| gwt-event-dom             | gwt-dom, gwt-event                      |
+| gwt-geolocation           | -                                       |
+| gwt-http                  | -                                       |
+| gwt-json                  | gwt-core                                |
+| gwt-jsonp                 | gwt-callback, gwt-timer, gwt-safehtml   |
+| gwt-layout                | gwt-ara, gwt-core, gwt-dom              |
+| gwt-regexp                | -                                       |
+| gwt-safecss               | gwt-dom-style-definitions, gwt-safehtml |
+| gwt-storage               | gwt-event                               |
+| gwt-timer                 | -                                       |
+| gwt-typedarrays           | -                                       |
+| gwt-xhr                   | gwt-typedarrays                         |
