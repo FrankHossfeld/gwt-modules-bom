@@ -58,7 +58,7 @@ To compile from source:
 
 1.  Install [Maven](https://maven.apache.org/download.cgi). We'll assume that the `mvn` command is in your path.
 2.  Clone the repo
-3.  run `mvn clen install`
+3.  run `mvn clean install`
 
 ### Testing<a id="testing"></a>
 
