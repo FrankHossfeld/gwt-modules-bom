@@ -42,7 +42,7 @@ This is a list of modules and their versions contained in this BOM:
 
 ## Dependency Matrix
 
-This is a list of modules and the dependencies to other moules:
+This is a list of modules and the dependencies:
 
 | Module                    | Depends on                              |
 |:--------------------------|:----------------------------------------|
