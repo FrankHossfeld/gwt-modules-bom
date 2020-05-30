@@ -53,6 +53,7 @@ This is a list of modules and the dependencies to other moules:
 | gwt-core                  | -                                       |
 | gwt-dom-style-definitions | -                                       |
 | gwt-editor                | gwt-event                               |
+| gwt-event                 | -                                       |
 | gwt-event-dom             | gwt-dom, gwt-event                      |
 | gwt-geolocation           | -                                       |
 | gwt-http                  | -                                       |
