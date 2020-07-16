@@ -66,7 +66,6 @@ This is a list of modules and the dependencies:
 | gwt-event                 | -                                                                                                                          |
 | gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                                                                       |
 | gwt-jsonp                 | gwt-callback, gwt-safehtml, gwt-timer                                                                                      |
-| gwt-jsonp                 | gwt-callback, gwt-safehtml, gwt-timer                                                                                      |
 | gwt-regexp                | -                                                                                                                          |
 | gwt-safecss               | gwt-dom-style-definitions, gwt-safehtml                                                                                    |
 | gwt-safehtml              | gwt-core, gwt-safecss (test)                                                                                               |
