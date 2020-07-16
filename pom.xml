@@ -42,40 +42,102 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- gwt-callback -->
       <dependency>
         <groupId>org.gwtproject.callback</groupId>
         <artifactId>gwt-callback</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
-     <dependency>
+
+      <!-- gwt-core -->
+      <dependency>
         <groupId>org.gwtproject.core</groupId>
         <artifactId>gwt-core</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
-     <dependency>
+
+      <!-- gwt-dom-style-definitions -->
+      <dependency>
         <groupId>org.gwtproject.dom</groupId>
         <artifactId>gwt-dom-style-definitions</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
-     <dependency>
-        <groupId>org.gwtproject.geolocation</groupId>
-        <artifactId>gwt-geolocation</artifactId>
-        <version>1.0-SNAPSHOT</version>
+
+      <!-- gwt-editor -->
+      <dependency>
+        <groupId>org.gwtproject.editor</groupId>
+        <artifactId>gwt-editor</artifactId>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
-     <dependency>
+      <dependency>
+        <groupId>org.gwtproject.editor</groupId>
+        <artifactId>gwt-editor-processor</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <!-- gwt-event -->
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-compat</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-legacy</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-logical</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+
+      <!-- gwt-jsonp -->
+      <dependency>
+        <groupId>org.gwtproject.jsonp</groupId>
+        <artifactId>gwt-jsonp</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+
+      <!-- gwt-regexp -->
+      <dependency>
         <groupId>org.gwtproject.regexp</groupId>
         <artifactId>gwt-regexp</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
+
+      <!-- gwt-timer -->
       <dependency>
         <groupId>org.gwtproject.timer</groupId>
         <artifactId>gwt-timer</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
+
+      <!-- gwt-typedarrays -->
       <dependency>
         <groupId>org.gwtproject.typedarrays</groupId>
         <artifactId>gwt-typedarrays</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+
+      <!-- gwt-typedarrays -->
+      <dependency>
+        <groupId>org.gwtproject.xhr</groupId>
+        <artifactId>gwt-xhr</artifactId>
+        <version>HEAD-SNAPSHOT</version>
+      </dependency>
+
+      <!-- gwt-typedarrays -->
+      <dependency>
+        <groupId>org.gwtproject.xml</groupId>
+        <artifactId>gwt-xml</artifactId>
+        <version>HEAD-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
