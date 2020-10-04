@@ -32,6 +32,7 @@ This is a list of modules and their versions contained in this BOM:
 
 | Module                    | Version (Snapshot) | Version (Release) | Repo                                                                                                               |
 |:--------------------------|:------------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------|
+| gwt-activity              |         -          |         -         | [https://github.com/gwtproject/gwt-activity](https://github.com/gwtproject/gwt-activity)                           |
 | gwt-animation             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-animation](https://github.com/gwtproject/gwt-animation)                         |
 | gwt-aria                  |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-aria](https://github.com/gwtproject/gwt-aria)                                   |
 | gwt-callback              |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-callback](https://github.com/gwtproject/gwt-callback)                           |
