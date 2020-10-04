@@ -5,7 +5,7 @@
 
   <groupId>org.gwtproject.modules</groupId>
   <artifactId>gwt-modules</artifactId>
-  <version>1.0.0-20200415-1204</version>
+  <version>1.0.0-RC1</version>
   <packaging>pom</packaging>
 
   <name>GWT Modulest BOM</name>
@@ -46,33 +46,40 @@
       <dependency>
         <groupId>org.gwtproject.callback</groupId>
         <artifactId>gwt-callback</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
 
       <!-- gwt-core -->
       <dependency>
         <groupId>org.gwtproject.core</groupId>
         <artifactId>gwt-core</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
+
+      <!-- gwt-dom-style-definitions -->
+<!--      <dependency>-->
+<!--        <groupId>org.gwtproject.dom</groupId>-->
+<!--        <artifactId>gwt-dom</artifactId>-->
+<!--        <version>1.0.0-RC1</version>-->
+<!--      </dependency>-->
 
       <!-- gwt-dom-style-definitions -->
       <dependency>
         <groupId>org.gwtproject.dom</groupId>
         <artifactId>gwt-dom-style-definitions</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
 
       <!-- gwt-editor -->
       <dependency>
         <groupId>org.gwtproject.editor</groupId>
         <artifactId>gwt-editor</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
       <dependency>
         <groupId>org.gwtproject.editor</groupId>
         <artifactId>gwt-editor-processor</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
         <scope>provided</scope>
       </dependency>
 
@@ -80,64 +87,112 @@
       <dependency>
         <groupId>org.gwtproject.event</groupId>
         <artifactId>gwt-event</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
       <dependency>
         <groupId>org.gwtproject.event</groupId>
         <artifactId>gwt-event-compat</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
       <dependency>
         <groupId>org.gwtproject.event</groupId>
         <artifactId>gwt-event-legacy</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
       <dependency>
         <groupId>org.gwtproject.event</groupId>
         <artifactId>gwt-event-logical</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-event-dom -->
+<!--      <dependency>-->
+<!--        <groupId>org.gwtproject.event</groupId>-->
+<!--        <artifactId>gwt-event-dom</artifactId>-->
+<!--        <version>1.0.0-RC1</version>-->
+<!--      </dependency>-->
+
+      <!-- gwt-history -->
+      <dependency>
+        <groupId>org.gwtproject.user.history</groupId>
+        <artifactId>gwt-history</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-http -->
+      <dependency>
+        <groupId>org.gwtproject.http</groupId>
+        <artifactId>gwt-http</artifactId>
+        <version>1.0.0-RC1</version>
       </dependency>
 
       <!-- gwt-jsonp -->
+<!--      <dependency>-->
+<!--        <groupId>org.gwtproject.jsonp</groupId>-->
+<!--        <artifactId>gwt-jsonp</artifactId>-->
+<!--        <version>HEAD-SNAPSHOT</version>-->
+<!--      </dependency>-->
+
+      <!-- gwt-editor -->
       <dependency>
-        <groupId>org.gwtproject.jsonp</groupId>
-        <artifactId>gwt-jsonp</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <groupId>org.gwtproject.place</groupId>
+        <artifactId>gwt-places</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.place</groupId>
+        <artifactId>gwt-places-processor</artifactId>
+        <version>1.0.0-RC1</version>
+        <scope>provided</scope>
       </dependency>
 
       <!-- gwt-regexp -->
       <dependency>
         <groupId>org.gwtproject.regexp</groupId>
         <artifactId>gwt-regexp</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
+
+      <!-- gwt-safehtml -->
+<!--      <dependency>-->
+<!--        <groupId>org.gwtproject.safehtml</groupId>-->
+<!--        <artifactId>gwt-safehtml</artifactId>-->
+<!--        <version>1.0.0-RC1</version>-->
+<!--      </dependency>-->
 
       <!-- gwt-timer -->
       <dependency>
         <groupId>org.gwtproject.timer</groupId>
         <artifactId>gwt-timer</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-window -->
+      <dependency>
+        <groupId>org.gwtproject.window</groupId>
+        <artifactId>gwt-window</artifactId>
+        <version>1.0.0-RC1</version>
       </dependency>
 
       <!-- gwt-typedarrays -->
       <dependency>
         <groupId>org.gwtproject.typedarrays</groupId>
         <artifactId>gwt-typedarrays</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
 
       <!-- gwt-typedarrays -->
-      <dependency>
-        <groupId>org.gwtproject.xhr</groupId>
-        <artifactId>gwt-xhr</artifactId>
-        <version>HEAD-SNAPSHOT</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>org.gwtproject.xhr</groupId>-->
+<!--        <artifactId>gwt-xhr</artifactId>-->
+<!--        <version>HEAD-SNAPSHOT</version>-->
+<!--      </dependency>-->
 
       <!-- gwt-typedarrays -->
       <dependency>
         <groupId>org.gwtproject.xml</groupId>
         <artifactId>gwt-xml</artifactId>
-        <version>HEAD-SNAPSHOT</version>
+        <version>1.0.0-RC1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
