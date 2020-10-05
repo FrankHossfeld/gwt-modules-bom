@@ -70,7 +70,7 @@ This is a list of modules and the dependencies:
 | gwt-callback              | -                                                                                     |
 | gwt-core                  | -                                                                                     |
 | gwt-callback              | -                                                                                     |
-| gwt-dom                   | gwt-core, gwt-dom-style-definitions, gwt-event, gwt-regexp, gwt-safecss, gwt-safehtml |
+| gwt-dom                   | gwt-core, gwt-dom-style-definitions, gwt-event, gwt-regexp, gwt-safehtml              |
 | gwt-dom-style-definitions | -                                                                                     |
 | gwt-editor                | gwt-event                                                                             |
 | gwt-event                 | -                                                                                     |
