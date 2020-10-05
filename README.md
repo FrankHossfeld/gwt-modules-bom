@@ -64,8 +64,9 @@ This is a list of modules and the dependencies:
 
 | Module                    | Depends on                                                                            |
 |:--------------------------|:--------------------------------------------------------------------------------------|
-| gwt-animation             | ??????                                                                                |
-| gwt-aria                  | gwt-dom                                                                               |
+| gwt-activity              | gwt-place?                                                                            |
+| gwt-animation             | gwt-timer?, gwt-core?, gwt-dom?                                                       |
+| gwt-aria                  | gwt-core?, gwt-dom?                                                                   |
 | gwt-callback              | -                                                                                     |
 | gwt-core                  | -                                                                                     |
 | gwt-callback              | -                                                                                     |
@@ -74,32 +75,22 @@ This is a list of modules and the dependencies:
 | gwt-editor                | gwt-event                                                                             |
 | gwt-event                 | -                                                                                     |
 | gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                                  |
-| gwt-geolocation           | ????                                                                                  |
+| gwt-geolocation           | -?                                                                                    |
 | gwt-history               | gwt-event                                                                             |
-| gwt-http                  | -                                                                                     |
-| gwt-json                  | ????                                                                                  |
-| gwt-jsonp                 | gwt-callback, gwt-safehtml, gwt-timer                                                 |
+| gwt-http                  | -?                                                                                    |
+| gwt-json                  | gwt-core?                                                                             |
+| gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                              |
+| gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                                        |
 | gwt-places                | gwt-event                                                                             |
 | gwt-regexp                | -                                                                                     |
 | gwt-safecss               | gwt-safehtml                                                                          |
 | gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                                   |
+| gwt-storage               | gwt-event?                                                                            |
 | gwt-timer                 | -                                                                                     |
 | gwt-typedarrays           | gwt-core                                                                              |
 | gwt-window                | gwt-event, gwt-http                                                                   |
 | gwt-xhr                   | gwt-typedarrays                                                                       |
 | gwt-xml                   | -                                                                                     |
 
-need another check:
 
 
-| Module          | Depends on                              |
-|:----------------|:----------------------------------------|
-| gwt-aria        | gwt-core, gwt-dom                       |
-| gwt-activity    | gwt-place                               |
-| gwt-animation   | gwt-timer, gwt-core, gwt-dom            |
-| gwt-geolocation | -                                       |
-| gwt-http        | -                                       |
-| gwt-json        | gwt-core                                |
-| gwt-jsonp       | gwt-callback, gwt-timer, gwt-safehtml   |
-| gwt-layout      | gwt-aria, gwt-core, gwt-dom             |
-| gwt-storage     | gwt-event                               |
