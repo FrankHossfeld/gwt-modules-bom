@@ -62,35 +62,35 @@ Keep in mind, that 1.0-SNAPSHOT will be the only version, that works with GWT 2.
 
 This is a list of modules and the dependencies:
 
-| Module                    | Depends on                                                                            |
-|:--------------------------|:--------------------------------------------------------------------------------------|
-| gwt-activity              | gwt-place?                                                                            |
-| gwt-animation             | gwt-timer?, gwt-core?, gwt-dom?                                                       |
-| gwt-aria                  | gwt-core?, gwt-dom?                                                                   |
-| gwt-callback              | -                                                                                     |
-| gwt-core                  | -                                                                                     |
-| gwt-callback              | -                                                                                     |
-| gwt-dom                   | gwt-core, gwt-dom-style-definitions, gwt-event, gwt-regexp, gwt-safehtml              |
-| gwt-dom-style-definitions | -                                                                                     |
-| gwt-editor                | gwt-event                                                                             |
-| gwt-event                 | -                                                                                     |
-| gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                                  |
-| gwt-geolocation           | -?                                                                                    |
-| gwt-history               | gwt-event                                                                             |
-| gwt-http                  | -?                                                                                    |
-| gwt-json                  | gwt-core?                                                                             |
-| gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                              |
-| gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                                        |
-| gwt-places                | gwt-event                                                                             |
-| gwt-regexp                | -                                                                                     |
-| gwt-safecss               | gwt-safehtml                                                                          |
-| gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                                   |
-| gwt-storage               | gwt-event?                                                                            |
-| gwt-timer                 | -                                                                                     |
-| gwt-typedarrays           | gwt-core                                                                              |
-| gwt-window                | gwt-event, gwt-http                                                                   |
-| gwt-xhr                   | gwt-typedarrays                                                                       |
-| gwt-xml                   | -                                                                                     |
+| Module                    | Depends on                                                               |
+|:--------------------------|:-------------------------------------------------------------------------|
+| gwt-activity              | gwt-event, gwt-place?, gwt-widget?                                       |
+| gwt-animation             | gwt-timer?, gwt-core?, gwt-dom?                                          |
+| gwt-aria                  | gwt-core?, gwt-dom?                                                      |
+| gwt-callback              | -                                                                        |
+| gwt-core                  | -                                                                        |
+| gwt-callback              | -                                                                        |
+| gwt-dom                   | gwt-core, gwt-dom-style-definitions, gwt-event, gwt-regexp, gwt-safehtml |
+| gwt-dom-style-definitions | -                                                                        |
+| gwt-editor                | gwt-event                                                                |
+| gwt-event                 | -                                                                        |
+| gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                     |
+| gwt-geolocation           | -?                                                                       |
+| gwt-history               | gwt-event                                                                |
+| gwt-http                  | -?                                                                       |
+| gwt-json                  | gwt-core?                                                                |
+| gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                 |
+| gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                           |
+| gwt-places                | gwt-event                                                                |
+| gwt-regexp                | -                                                                        |
+| gwt-safecss               | gwt-safehtml                                                             |
+| gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                      |
+| gwt-storage               | gwt-event?                                                               |
+| gwt-timer                 | -                                                                        |
+| gwt-typedarrays           | gwt-core                                                                 |
+| gwt-window                | gwt-event, gwt-http                                                      |
+| gwt-xhr                   | gwt-typedarrays                                                          |
+| gwt-xml                   | -                                                                        |
 
 
 
