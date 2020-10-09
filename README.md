@@ -77,7 +77,7 @@ This is a list of modules and the dependencies:
 | gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                     |
 | gwt-geolocation           | -?                                                                       |
 | gwt-history               | gwt-event                                                                |
-| gwt-http                  | -?                                                                       |
+| gwt-http                  | -                                                                        |
 | gwt-json                  | gwt-core?                                                                |
 | gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                 |
 | gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                           |
