@@ -75,7 +75,7 @@ This is a list of modules and the dependencies:
 | gwt-editor                | gwt-event                                                                |
 | gwt-event                 | -                                                                        |
 | gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                     |
-| gwt-geolocation           | -?                                                                       |
+| gwt-geolocation           | -                                                                        |
 | gwt-history               | gwt-event                                                                |
 | gwt-http                  | -                                                                        |
 | gwt-json                  | gwt-core?                                                                |
