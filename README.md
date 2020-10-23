@@ -42,7 +42,7 @@ This is a list of modules and their versions contained in this BOM:
 | gwt-editor                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-editor](https://github.com/gwtproject/gwt-editor)                               |
 | gwt-event                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-event](https://github.com/gwtproject/gwt-event)                                 |
 | gwt-event-dom             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-event-dom](https://github.com/gwtproject/gwt-event-dom)                         |
-| gwt-geolocation           |         -          |         -         | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
+| gwt-geolocation           |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-history               |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-history](https://github.com/gwtproject/gwt-history)                             |
 | gwt-http                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-http](https://github.com/gwtproject/gwt-http)                                   |
 | gwt-json                  |         -          |         -         | [https://github.com/gwtproject/gwt-json](https://github.com/gwtproject/gwt-json)                                   |
@@ -75,7 +75,7 @@ This is a list of modules and the dependencies:
 | gwt-editor                | gwt-event                                                                |
 | gwt-event                 | -                                                                        |
 | gwt-event-dom             | gwt-dom, gwt-event, gwt-event-legacy                                     |
-| gwt-geolocation           | -?                                                                       |
+| gwt-geolocation           | -                                                                        |
 | gwt-history               | gwt-event                                                                |
 | gwt-http                  | -?                                                                       |
 | gwt-json                  | gwt-core?                                                                |
@@ -83,7 +83,6 @@ This is a list of modules and the dependencies:
 | gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                           |
 | gwt-places                | gwt-event                                                                |
 | gwt-regexp                | -                                                                        |
-| gwt-safecss               | gwt-safehtml                                                             |
 | gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                      |
 | gwt-storage               | gwt-event?                                                               |
 | gwt-timer                 | -                                                                        |
