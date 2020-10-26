@@ -42,18 +42,18 @@ This is a list of modules and their versions contained in this BOM:
 | gwt-editor                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-editor](https://github.com/gwtproject/gwt-editor)                               |
 | gwt-event                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-event](https://github.com/gwtproject/gwt-event)                                 |
 | gwt-event-dom             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-event-dom](https://github.com/gwtproject/gwt-event-dom)                         |
-| gwt-geolocation           |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
+| gwt-geolocation           |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-history               |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-history](https://github.com/gwtproject/gwt-history)                             |
 | gwt-http                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-http](https://github.com/gwtproject/gwt-http)                                   |
 | gwt-json                  |         -          |         -         | [https://github.com/gwtproject/gwt-json](https://github.com/gwtproject/gwt-json)                                   |
 | gwt-jsonp                 |         -          |         -         | [https://github.com/gwtproject/gwt-jsonp](https://github.com/gwtproject/gwt-jsonp)                                 |
 | gwt-places                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-places](https://github.com/gwtproject/gwt-places)                               |
 | gwt-regexp                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-regexp](https://github.com/gwtproject/gwt-regexp)                               |
-| gwt-safehtml              |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-safehtml](https://github.com/gwtproject/gwt-safehtml)                           |
+| gwt-safehtml              |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-safehtml](https://github.com/gwtproject/gwt-safehtml)                           |
 | gwt-timer                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
-| gwt-typedarrays           |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
+| gwt-typedarrays           |   HEAD-SNAPSHOT    |     1.0.0-RC2     | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
 | gwt-window                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-window](https://github.com/gwtproject/gwt-window)                               |
-| gwt-xhr                   |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-xhr](https://github.com/gwtproject/gwt-xhr)                                     |
+| gwt-xhr                   |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-xhr](https://github.com/gwtproject/gwt-xhr)                                     |
 | gwt-xml                   |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-xml](https://github.com/gwtproject/gwt-xml)                                     |
 
 Keep in mind, that 1.0-SNAPSHOT will be the only version, that works with GWT 2.8.2 and Elemental2 1.0.0-RC1. All other versions **require GWT 2.9.0 and Elemental2 1.1.0**.
