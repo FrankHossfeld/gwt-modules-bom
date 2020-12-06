@@ -42,6 +42,27 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- gwt-animation -->
+      <dependency>
+        <groupId>org.gwtproject.animation</groupId>
+        <artifactId>gwt-animation</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+      
+      <!-- gwt-aria -->
+      <dependency>
+        <groupId>org.gwtproject.aria</groupId>
+        <artifactId>gwt-aria</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-callback -->
+      <dependency>
+        <groupId>org.gwtproject.callback</groupId>
+        <artifactId>gwt-callback</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
       <!-- gwt-callback -->
       <dependency>
         <groupId>org.gwtproject.callback</groupId>
@@ -56,12 +77,12 @@
         <version>1.0.0-RC1</version>
       </dependency>
 
-      <!-- gwt-dom-style-definitions -->
-<!--      <dependency>-->
-<!--        <groupId>org.gwtproject.dom</groupId>-->
-<!--        <artifactId>gwt-dom</artifactId>-->
-<!--        <version>1.0.0-RC1</version>-->
-<!--      </dependency>-->
+      <!-- gwt-dom -->
+      <dependency>
+        <groupId>org.gwtproject.dom</groupId>
+        <artifactId>gwt-dom</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
 
       <!-- gwt-dom-style-definitions -->
       <dependency>
@@ -106,11 +127,18 @@
       </dependency>
 
       <!-- gwt-event-dom -->
-<!--      <dependency>-->
-<!--        <groupId>org.gwtproject.event</groupId>-->
-<!--        <artifactId>gwt-event-dom</artifactId>-->
-<!--        <version>1.0.0-RC1</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-dom</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-geo-location -->
+      <dependency>
+        <groupId>org.gwtproject.user.geo-location</groupId>
+        <artifactId>gwt-geo-location</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
 
       <!-- gwt-history -->
       <dependency>
@@ -123,6 +151,13 @@
       <dependency>
         <groupId>org.gwtproject.http</groupId>
         <artifactId>gwt-http</artifactId>
+        <version>1.0.0-RC2</version>
+      </dependency>
+
+      <!-- gwt-json -->
+      <dependency>
+        <groupId>org.gwtproject.json</groupId>
+        <artifactId>gwt-json</artifactId>
         <version>1.0.0-RC1</version>
       </dependency>
 
@@ -132,6 +167,13 @@
 <!--        <artifactId>gwt-jsonp</artifactId>-->
 <!--        <version>HEAD-SNAPSHOT</version>-->
 <!--      </dependency>-->
+
+      <!-- gwt-layout -->
+      <dependency>
+        <groupId>org.gwtproject.layout</groupId>
+        <artifactId>gwt-layout</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
 
       <!-- gwt-editor -->
       <dependency>
@@ -153,10 +195,29 @@
         <version>1.0.0-RC1</version>
       </dependency>
 
+      <!-- gwt-safecss -->
+      <dependency>
+        <groupId>org.gwtproject.safecss</groupId>
+        <artifactId>gwt-safecss</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
       <!-- gwt-safehtml -->
+      <dependency>
+        <groupId>org.gwtproject.safehtml</groupId>
+        <artifactId>gwt-safehtml</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.safehtml</groupId>
+        <artifactId>gwt-safehtml-processor</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
+
+      <!-- gwt-storage -->
 <!--      <dependency>-->
-<!--        <groupId>org.gwtproject.safehtml</groupId>-->
-<!--        <artifactId>gwt-safehtml</artifactId>-->
+<!--        <groupId>org.gwtproject.storage</groupId>-->
+<!--        <artifactId>gwt-storage</artifactId>-->
 <!--        <version>1.0.0-RC1</version>-->
 <!--      </dependency>-->
 
@@ -167,26 +228,26 @@
         <version>1.0.0-RC1</version>
       </dependency>
 
-      <!-- gwt-window -->
-      <dependency>
-        <groupId>org.gwtproject.window</groupId>
-        <artifactId>gwt-window</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
       <!-- gwt-typedarrays -->
       <dependency>
         <groupId>org.gwtproject.typedarrays</groupId>
         <artifactId>gwt-typedarrays</artifactId>
-        <version>1.0.0-RC1</version>
+        <version>1.0.0-RC2</version>
+      </dependency>
+
+      <!-- gwt-window -->
+      <dependency>
+        <groupId>org.gwtproject.window</groupId>
+        <artifactId>gwt-window</artifactId>
+        <version>1.0.0-RC2</version>
       </dependency>
 
       <!-- gwt-typedarrays -->
-<!--      <dependency>-->
-<!--        <groupId>org.gwtproject.xhr</groupId>-->
-<!--        <artifactId>gwt-xhr</artifactId>-->
-<!--        <version>HEAD-SNAPSHOT</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>org.gwtproject.xhr</groupId>
+        <artifactId>gwt-xhr</artifactId>
+        <version>1.0.0-RC1</version>
+      </dependency>
 
       <!-- gwt-typedarrays -->
       <dependency>

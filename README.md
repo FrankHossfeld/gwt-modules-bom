@@ -33,26 +33,28 @@ This is a list of modules and their versions contained in this BOM:
 | Module                    | Version (Snapshot) | Version (Release) | Repo                                                                                                               |
 |:--------------------------|:------------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------|
 | gwt-activity              |         -          |         -         | [https://github.com/gwtproject/gwt-activity](https://github.com/gwtproject/gwt-activity)                           |
-| gwt-animation             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-animation](https://github.com/gwtproject/gwt-animation)                         |
-| gwt-aria                  |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-aria](https://github.com/gwtproject/gwt-aria)                                   |
+| gwt-animation             |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-animation](https://github.com/gwtproject/gwt-animation)                         |
+| gwt-aria                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-aria](https://github.com/gwtproject/gwt-aria)                                   |
 | gwt-callback              |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-callback](https://github.com/gwtproject/gwt-callback)                           |
 | gwt-core                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-core](https://github.com/gwtproject/gwt-core)                                   |
-| gwt-dom                   |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-dom](https://github.com/gwtproject/gwt-dom)                                     |
+| gwt-dom                   |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-dom](https://github.com/gwtproject/gwt-dom)                                     |
 | gwt-dom-style-definitions |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-dom-style-definitions](https://github.com/gwtproject/gwt-dom-style-definitions) |
 | gwt-editor                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-editor](https://github.com/gwtproject/gwt-editor)                               |
 | gwt-event                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-event](https://github.com/gwtproject/gwt-event)                                 |
 | gwt-event-dom             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-event-dom](https://github.com/gwtproject/gwt-event-dom)                         |
 | gwt-geolocation           |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-history               |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-history](https://github.com/gwtproject/gwt-history)                             |
-| gwt-http                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-http](https://github.com/gwtproject/gwt-http)                                   |
-| gwt-json                  |         -          |         -         | [https://github.com/gwtproject/gwt-json](https://github.com/gwtproject/gwt-json)                                   |
+| gwt-http                  |   HEAD-SNAPSHOT    |     1.0.0-RC2     | [https://github.com/gwtproject/gwt-http](https://github.com/gwtproject/gwt-http)                                   |
+| gwt-json                  |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-json](https://github.com/gwtproject/gwt-json)                                   |
 | gwt-jsonp                 |         -          |         -         | [https://github.com/gwtproject/gwt-jsonp](https://github.com/gwtproject/gwt-jsonp)                                 |
+| gwt-layout                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-layout](https://github.com/gwtproject/gwt-layout)                               |
 | gwt-places                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-places](https://github.com/gwtproject/gwt-places)                               |
 | gwt-regexp                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-regexp](https://github.com/gwtproject/gwt-regexp)                               |
 | gwt-safehtml              |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-safehtml](https://github.com/gwtproject/gwt-safehtml)                           |
+| gwt-storage               |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-storage](https://github.com/gwtproject/gwt-storagel)                            |
 | gwt-timer                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-timer](https://github.com/gwtproject/gwt-timer)                                 |
 | gwt-typedarrays           |   HEAD-SNAPSHOT    |     1.0.0-RC2     | [https://github.com/gwtproject/gwt-typedarrays](https://github.com/gwtproject/gwt-typedarrays)                     |
-| gwt-window                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-window](https://github.com/gwtproject/gwt-window)                               |
+| gwt-window                |   HEAD-SNAPSHOT    |     1.0.0-RC2     | [https://github.com/gwtproject/gwt-window](https://github.com/gwtproject/gwt-window)                               |
 | gwt-xhr                   |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-xhr](https://github.com/gwtproject/gwt-xhr)                                     |
 | gwt-xml                   |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-xml](https://github.com/gwtproject/gwt-xml)                                     |
 
@@ -65,8 +67,8 @@ This is a list of modules and the dependencies:
 | Module                    | Depends on                                                               |
 |:--------------------------|:-------------------------------------------------------------------------|
 | gwt-activity              | gwt-event, gwt-place?, gwt-widget?                                       |
-| gwt-animation             | gwt-timer?, gwt-core?, gwt-dom?                                          |
-| gwt-aria                  | gwt-core?, gwt-dom?                                                      |
+| gwt-animation             | gwt-core, gwt-dom, gwt-timer                                             |
+| gwt-aria                  | gwt-dom                                                                  |
 | gwt-callback              | -                                                                        |
 | gwt-core                  | -                                                                        |
 | gwt-callback              | -                                                                        |
@@ -78,13 +80,13 @@ This is a list of modules and the dependencies:
 | gwt-geolocation           | -                                                                        |
 | gwt-history               | gwt-event                                                                |
 | gwt-http                  | -                                                                        |
-| gwt-json                  | gwt-core?                                                                |
+| gwt-json                  | gwt-core                                                                 |
 | gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                 |
-| gwt-layout                | gwt-aria?, gwt-core?, gwt-dom?                                           |
+| gwt-layout                | gwt-animationm, gwt-aria, gwt-dom, gwt-dom-style-definitions             |
 | gwt-places                | gwt-event                                                                |
 | gwt-regexp                | -                                                                        |
 | gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                      |
-| gwt-storage               | gwt-event?                                                               |
+| gwt-storage               | gwt-event, gwt-event                                                     |
 | gwt-timer                 | -                                                                        |
 | gwt-typedarrays           | gwt-core                                                                 |
 | gwt-window                | gwt-event, gwt-http                                                      |
