@@ -41,7 +41,7 @@ This is a list of modules and their versions contained in this BOM:
 | gwt-dom-style-definitions |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-dom-style-definitions](https://github.com/gwtproject/gwt-dom-style-definitions) |
 | gwt-editor                |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-editor](https://github.com/gwtproject/gwt-editor)                               |
 | gwt-event                 |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-event](https://github.com/gwtproject/gwt-event)                                 |
-| gwt-event-dom             |   HEAD-SNAPSHOT    |         -         | [https://github.com/gwtproject/gwt-event-dom](https://github.com/gwtproject/gwt-event-dom)                         |
+| gwt-event-dom             |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-event-dom](https://github.com/gwtproject/gwt-event-dom)                         |
 | gwt-geolocation           |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-geolocation](https://github.com/gwtproject/gwt-geolocation)                     |
 | gwt-history               |   HEAD-SNAPSHOT    |     1.0.0-RC1     | [https://github.com/gwtproject/gwt-history](https://github.com/gwtproject/gwt-history)                             |
 | gwt-http                  |   HEAD-SNAPSHOT    |     1.0.0-RC2     | [https://github.com/gwtproject/gwt-http](https://github.com/gwtproject/gwt-http)                                   |
