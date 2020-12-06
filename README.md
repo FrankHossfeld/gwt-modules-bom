@@ -28,7 +28,7 @@ Keep in mind, you do not need to add a **version**-tag.
 
 ## Current Versions
 
-This is a list of modules and their versions contained in this BOM:
+This is a list of modules, and their versions contained in this BOM:
 
 | Module                    | Version (Snapshot) | Version (Release) | Repo                                                                                                               |
 |:--------------------------|:------------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ This is a list of modules and the dependencies:
 | gwt-http                  | -                                                                        |
 | gwt-json                  | gwt-core                                                                 |
 | gwt-jsonp                 | gwt-callback?, gwt-safehtml?, gwt-timer?                                 |
-| gwt-layout                | gwt-animationm, gwt-aria, gwt-dom, gwt-dom-style-definitions             |
+| gwt-layout                | gwt-animation, gwt-aria, gwt-dom, gwt-dom-style-definitions             |
 | gwt-places                | gwt-event                                                                |
 | gwt-regexp                | -                                                                        |
 | gwt-safehtml              | gwt-core, gwt-dom-style-definitions                                      |
