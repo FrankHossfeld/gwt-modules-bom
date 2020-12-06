@@ -63,13 +63,6 @@
         <version>1.0.0-RC1</version>
       </dependency>
 
-      <!-- gwt-callback -->
-      <dependency>
-        <groupId>org.gwtproject.callback</groupId>
-        <artifactId>gwt-callback</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
       <!-- gwt-core -->
       <dependency>
         <groupId>org.gwtproject.core</groupId>
