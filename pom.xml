@@ -103,7 +103,6 @@
         <version>${gwt.module.editor}</version>
         <scope>provided</scope>
       </dependency>
-
       <!-- gwt-event -->
       <dependency>
         <groupId>org.gwtproject.event</groupId>
@@ -130,7 +129,6 @@
         <artifactId>gwt-event-dom</artifactId>
         <version>${gwt.module.event.dom}</version>
       </dependency>
-
       <!-- legacy -->
       <dependency>
         <groupId>org.gwtproject.animation</groupId>
@@ -232,8 +230,7 @@
     </dependencies>
   </dependencyManagement>
 
-  <!-- Alas, need to include snapshot reference since otherwise can not find
-       snapshot of parent... -->
+  <!-- Alas, need to include snapshot reference since otherwise can not find snapshot of parent... -->
   <repositories>
     <repository>
       <id>sonatype-nexus-snapshots</id>
