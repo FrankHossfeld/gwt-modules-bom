@@ -5,7 +5,7 @@
 
   <groupId>org.gwtproject</groupId>
   <artifactId>gwt-modules-bom</artifactId>
-  <version>1.0.0-RC1</version>
+  <version>HEAD-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>GWT Modules BOM</name>
