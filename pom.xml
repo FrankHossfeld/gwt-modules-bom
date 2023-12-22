@@ -41,11 +41,31 @@
   <inceptionYear>2024</inceptionYear>
 
   <properties>
+    <gwt.module.animation>1.0.0-RC1</gwt.module.animation>
+    <gwt.module.aria>1.0.0-RC1</gwt.module.aria>
     <gwt.module.callback>1.0.0-RC1</gwt.module.callback>
     <gwt.module.core>1.0.0-RC1</gwt.module.core>
     <gwt.module.dom>1.0.0-RC1</gwt.module.dom>
     <gwt.module.editor>1.0.0-RC1</gwt.module.editor>
     <gwt.module.event>1.0.0-RC1</gwt.module.event>
+    <gwt.module.event.comnpat>1.0.0-RC1</gwt.module.event.comnpat>
+    <gwt.module.event.dom>1.0.0-RC1</gwt.module.event.dom>
+    <gwt.module.event.legacy>1.0.0-RC1</gwt.module.event.legacy>
+    <gwt.module.event.logical>1.0.0-RC1</gwt.module.event.logical>
+    <gwt.module.geo.location>1.0.0-RC1</gwt.module.geo.location>
+    <gwt.module.history>1.0.0-RC1</gwt.module.history>
+    <gwt.module.http>1.0.0-RC2</gwt.module.http>
+    <gwt.module.json>1.0.0-RC1</gwt.module.json>
+    <gwt.module.layout>1.0.0-RC1</gwt.module.layout>
+    <gwt.module.places>1.0.0-RC1</gwt.module.places>
+    <gwt.module.regexp>1.0.0-RC1</gwt.module.regexp>
+    <gwt.module.safecss>1.0.0-RC1</gwt.module.safecss>
+    <gwt.module.safehtml>1.0.0-RC1</gwt.module.safehtml>
+    <gwt.module.timer>1.0.0-RC1</gwt.module.timer>
+    <gwt.module.typedarrays>1.0.0-RC2</gwt.module.typedarrays>
+    <gwt.module.window>1.0.0-RC2</gwt.module.window>
+    <gwt.module.xhr>1.0.0-RC1</gwt.module.xhr>
+    <gwt.module.sml>1.0.0-RC1</gwt.module.sml>
   </properties>
 
   <dependencyManagement>
@@ -66,188 +86,149 @@
         <artifactId>gwt-dom</artifactId>
         <version>${gwt.module.dom}</version>
       </dependency>
-            <dependency>
-              <groupId>org.gwtproject.editor</groupId>
-              <artifactId>gwt-editor</artifactId>
-              <version>${gwt.module.editor}</version>
-            </dependency>
-            <dependency>
-              <groupId>org.gwtproject.editor</groupId>
-              <artifactId>gwt-editor-processor</artifactId>
-              <version>${gwt.module.editor}</version>
-              <scope>provided</scope>
-            </dependency>
-            <dependency>
-              <groupId>org.gwtproject.editor</groupId>
-              <artifactId>gwt-editor-processor</artifactId>
-              <version>${gwt.module.editor}</version>
-              <scope>provided</scope>
-            </dependency>
-            <dependency>
-              <groupId>org.gwtproject.event</groupId>
-              <artifactId>gwt-event</artifactId>
-              <version>${gwt.module.event}</version>
-            </dependency>
+      <dependency>
+        <groupId>org.gwtproject.editor</groupId>
+        <artifactId>gwt-editor</artifactId>
+        <version>${gwt.module.editor}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.editor</groupId>
+        <artifactId>gwt-editor-processor</artifactId>
+        <version>${gwt.module.editor}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.editor</groupId>
+        <artifactId>gwt-editor-processor</artifactId>
+        <version>${gwt.module.editor}</version>
+        <scope>provided</scope>
+      </dependency>
 
-      <!--      &lt;!&ndash; gwt-animation &ndash;&gt;-->
+      <!-- gwt-event -->
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event</artifactId>
+        <version>${gwt.module.event}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-compat</artifactId>
+        <version>${gwt.module.event.compat}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-legacy</artifactId>
+        <version>${gwt.module.event.legacy}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-logical</artifactId>
+        <version>${gwt.module.event.logical}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.event</groupId>
+        <artifactId>gwt-event-dom</artifactId>
+        <version>${gwt.module.event.dom}</version>
+      </dependency>
+
+      <!-- legacy -->
+      <dependency>
+        <groupId>org.gwtproject.animation</groupId>
+        <artifactId>gwt-animation</artifactId>
+        <version>${gwt.module.animation}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.aria</groupId>
+        <artifactId>gwt-aria</artifactId>
+        <version>${gwt.module.aria}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.user.geo-location</groupId>
+        <artifactId>gwt-geo-location</artifactId>
+        <version>${gwt.module.geo.location}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.user.history</groupId>
+        <artifactId>gwt-history</artifactId>
+        <version>${gwt.module.history}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.http</groupId>
+        <artifactId>gwt-http</artifactId>
+        <version>${gwt.module.http}</version>
+      </dependency>
       <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.animation</groupId>-->
-      <!--        <artifactId>gwt-animation</artifactId>-->
+      <!--        <groupId>org.gwtproject.jsonp</groupId>-->
+      <!--        <artifactId>gwt-jsonp</artifactId>-->
+      <!--        <version>HEAD-SNAPSHOT</version>-->
+      <!--      </dependency>-->
+      <dependency>
+        <groupId>org.gwtproject.layout</groupId>
+        <artifactId>gwt-layout</artifactId>
+        <version>${gwt.module.layout}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.place</groupId>
+        <artifactId>gwt-places</artifactId>
+        <version>${gwt.module.places}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.place</groupId>
+        <artifactId>gwt-places-processor</artifactId>
+        <version>${gwt.module.places}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.regexp</groupId>
+        <artifactId>gwt-regexp</artifactId>
+        <version>${gwt.module.regexp}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.safecss</groupId>
+        <artifactId>gwt-safecss</artifactId>
+        <version>${gwt.module.safecss}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.safehtml</groupId>
+        <artifactId>gwt-safehtml</artifactId>
+        <version>${gwt.module.safehtml}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.safehtml</groupId>
+        <artifactId>gwt-safehtml-processor</artifactId>
+        <version>${gwt.module.safehtml}</version>
+        <scope>provided</scope>
+      </dependency>
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.storage</groupId>-->
+      <!--        <artifactId>gwt-storage</artifactId>-->
       <!--        <version>1.0.0-RC1</version>-->
       <!--      </dependency>-->
-      <!--      -->
-      <!--      &lt;!&ndash; gwt-aria &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.aria</groupId>-->
-      <!--        <artifactId>gwt-aria</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-      <!--      &lt;!&ndash; gwt-event &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.event</groupId>-->
-      <!--        <artifactId>gwt-event-compat</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.event</groupId>-->
-      <!--        <artifactId>gwt-event-legacy</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.event</groupId>-->
-      <!--        <artifactId>gwt-event-logical</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-event-dom &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.event</groupId>-->
-      <!--        <artifactId>gwt-event-dom</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-geo-location &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.user.geo-location</groupId>-->
-      <!--        <artifactId>gwt-geo-location</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-history &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.user.history</groupId>-->
-      <!--        <artifactId>gwt-history</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-http &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.http</groupId>-->
-      <!--        <artifactId>gwt-http</artifactId>-->
-      <!--        <version>1.0.0-RC2</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-json &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.json</groupId>-->
-      <!--        <artifactId>gwt-json</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-jsonp &ndash;&gt;-->
-      <!--&lt;!&ndash;      <dependency>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <groupId>org.gwtproject.jsonp</groupId>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <artifactId>gwt-jsonp</artifactId>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <version>HEAD-SNAPSHOT</version>&ndash;&gt;-->
-      <!--&lt;!&ndash;      </dependency>&ndash;&gt;-->
-
-      <!--      &lt;!&ndash; gwt-layout &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.layout</groupId>-->
-      <!--        <artifactId>gwt-layout</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-editor &ndash;&gt;-->
-<!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.place</groupId>-->
-      <!--        <artifactId>gwt-places</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-<!--      </dependency>-->
-<!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.place</groupId>-->
-      <!--        <artifactId>gwt-places-processor</artifactId>-->
-<!--        <version>1.0.0-RC1</version>-->
-      <!--        <scope>provided</scope>-->
-<!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-regexp &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.regexp</groupId>-->
-      <!--        <artifactId>gwt-regexp</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-safecss &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.safecss</groupId>-->
-      <!--        <artifactId>gwt-safecss</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-safehtml &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.safehtml</groupId>-->
-      <!--        <artifactId>gwt-safehtml</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.safehtml</groupId>-->
-      <!--        <artifactId>gwt-safehtml-processor</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-storage &ndash;&gt;-->
-      <!--&lt;!&ndash;      <dependency>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <groupId>org.gwtproject.storage</groupId>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <artifactId>gwt-storage</artifactId>&ndash;&gt;-->
-      <!--&lt;!&ndash;        <version>1.0.0-RC1</version>&ndash;&gt;-->
-      <!--&lt;!&ndash;      </dependency>&ndash;&gt;-->
-
-      <!--      &lt;!&ndash; gwt-timer &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.timer</groupId>-->
-      <!--        <artifactId>gwt-timer</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.typedarrays</groupId>-->
-      <!--        <artifactId>gwt-typedarrays</artifactId>-->
-      <!--        <version>1.0.0-RC2</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-window &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.window</groupId>-->
-      <!--        <artifactId>gwt-window</artifactId>-->
-      <!--        <version>1.0.0-RC2</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.xhr</groupId>-->
-      <!--        <artifactId>gwt-xhr</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
-
-      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
-      <!--      <dependency>-->
-      <!--        <groupId>org.gwtproject.xml</groupId>-->
-      <!--        <artifactId>gwt-xml</artifactId>-->
-      <!--        <version>1.0.0-RC1</version>-->
-      <!--      </dependency>-->
+      <dependency>
+        <groupId>org.gwtproject.timer</groupId>
+        <artifactId>gwt-timer</artifactId>
+        <version>${gwt.module.timer}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.typedarrays</groupId>
+        <artifactId>gwt-typedarrays</artifactId>
+        <version>${gwt.module.typedarrays}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.window</groupId>
+        <artifactId>gwt-window</artifactId>
+        <version>${gwt.module.window}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.xhr</groupId>
+        <artifactId>gwt-xhr</artifactId>
+        <version>${gwt.module.xhr}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gwtproject.xml</groupId>
+        <artifactId>gwt-xml</artifactId>
+        <version>${gwt.module.xml}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
