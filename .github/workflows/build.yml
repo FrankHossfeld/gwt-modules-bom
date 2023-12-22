@@ -30,7 +30,7 @@ jobs:
                 java-version: ${{ matrix.java_version }}
                 cache: 'maven'
         -   name: build
-            run: ./mvnw -B -q -ff -btp verify
+            run: ./mvnw -B -q -ff -ntp verify
         -   name: Extract project Maven version
             id: projectVersion
             run: echo "version=$(./mvnw org.apache.maven.plugins:maven-help-plugin:3.3.0:evaluate -DforceStdout -Dexpression=project.version -q)" >> $GITHUB_OUTPUT
