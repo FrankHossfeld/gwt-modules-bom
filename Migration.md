@@ -68,7 +68,7 @@ target/
 ```
 
 ### GitHib Action 'CI'
-This is the code used for the 'CI' action in GitHub:
+This is the code used for the 'CI' action in GitHub: (ToDo: improve!)
 
 ```yaml
 # This workflow will build a Java project with Maven
