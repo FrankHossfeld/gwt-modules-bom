@@ -83,8 +83,8 @@ jobs:
                 if: ${{ endsWith(steps.project.outputs.version, '-SNAPSHOT') }}
                 uses: actions/github-script@v6
                 with:
-                script: |
-                    core.setFailed('Version not valid for main')
+                    script: |
+                        core.setFailed('Version not valid for main')
             - name: Check if tag already exists
               id: version-check
               run: |
