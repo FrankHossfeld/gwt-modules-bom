@@ -11,13 +11,13 @@ permissions:
 
 jobs:
     build:
-#        runs-on: ubuntu-latest
-        runs-on: ${{ matrix.os }}
+#        runs-on: ${{ matrix.os }}
+        runs-on: ubuntu-latest
         strategy:
             fail-fast: false
-            matrix:
-                java_version: ['8', '11', '17']
-                os: ['ubuntu-latest']
+#            matrix:
+#                java_version: ['11']
+#                os: ['ubuntu-latest']
         env:
             JAVA_OPTS: "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
         timeout-minutes: 8
@@ -27,14 +27,46 @@ jobs:
             uses: actions/setup-java@v4
             with:
                 distribution: 'temurin'
-                java-version: ${{ matrix.java_version }}
+#                java-version: ${{ matrix.java_version }}
+                java-version: '11'
                 cache: 'maven'
         -   name: build
             run: ./mvnw -B -q -ff -ntp verify
-        -   name: Extract project Maven version
-            id: projectVersion
-            run: echo "version=$(./mvnw org.apache.maven.plugins:maven-help-plugin:3.3.0:evaluate -DforceStdout -Dexpression=project.version -q)" >> $GITHUB_OUTPUT
-
+    maven-deploy-dev:
+#        runs-on: ${{ matrix.os }}
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+#            matrix:
+#                java_version: ['11']
+#                os: ['ubuntu-latest']
+        env:
+            JAVA_OPTS: "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+        needs: [build]
+        timeout-minutes: 8
+        if: github.ref == 'refs/heads/dev'
+        steps:
+            -   uses: actions/checkout@v4
+            -   name: Set up JDK
+                uses: actions/setup-java@v4
+                with:
+                    distribution: 'temurin'
+#                    java-version: ${{ matrix.java_version }}
+                    java-version: '11'
+                    cache: 'maven'
+            -   name: Extract Maven project version
+                run: echo "version=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec -s ./.github/workflows/settings.xml)" >> $GITHUB_OUTPUT
+                id: project
+            -   name: Show extracted Maven project version
+                run: echo ${{ steps.project.outputs.version }}
+            -   name: Check version
+                if: ${{ !endsWith(steps.project.outputs.version, '-SNAPSHOT') }}
+                uses: actions/github-script@v6
+                with:
+                    script: |
+                        core.setFailed('Version not valid for dev')
+#            -   name: Deploy with Maven
+#                run: mvn deploy -ntp -DskipTests -Daether.checksums.algorithms=MD5 -s ./.github/workflows/settings.xml
 
 
 #                server-id: sonatype-nexus-snapshots
