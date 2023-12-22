@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.gwtproject.modules</groupId>
-  <artifactId>gwt-modules</artifactId>
+  <groupId>org.gwtproject</groupId>
+  <artifactId>gwt-modules-bom</artifactId>
   <version>1.0.0-RC1</version>
   <packaging>pom</packaging>
 
-  <name>GWT Modulest BOM</name>
-  <description>BOM contining the latest versionof the GWT modules</description>
+  <name>GWT Modules BOM</name>
+  <description>BOM containing the latest version of the core GWT modules</description>
   <url>https://github.com/gwtproject/gwt-modules</url>
 
   <organization>
@@ -38,216 +38,228 @@
     <url>https://github.com/gwtproject/gwt-modules/tree/master</url>
   </scm>
 
-  <inceptionYear>2019</inceptionYear>
+  <inceptionYear>2024</inceptionYear>
+
+  <properties>
+    <gwt.module.callback>1.0.0-RC1</gwt.module.callback>
+    <gwt.module.core>1.0.0-RC1</gwt.module.core>
+    <gwt.module.dom>1.0.0-RC1</gwt.module.dom>
+    <gwt.module.editor>1.0.0-RC1</gwt.module.editor>
+    <gwt.module.event>1.0.0-RC1</gwt.module.event>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!-- gwt-animation -->
-      <dependency>
-        <groupId>org.gwtproject.animation</groupId>
-        <artifactId>gwt-animation</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      
-      <!-- gwt-aria -->
-      <dependency>
-        <groupId>org.gwtproject.aria</groupId>
-        <artifactId>gwt-aria</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-callback -->
-      <dependency>
-        <groupId>org.gwtproject.callback</groupId>
-        <artifactId>gwt-callback</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-core -->
+      <!-- core -->
       <dependency>
         <groupId>org.gwtproject.core</groupId>
         <artifactId>gwt-core</artifactId>
-        <version>1.0.0-RC1</version>
+        <version>${gwt.module.core}</version>
       </dependency>
-
-      <!-- gwt-dom -->
+      <dependency>
+        <groupId>org.gwtproject.callback</groupId>
+        <artifactId>gwt-callback</artifactId>
+        <version>${gwt.module.callback}</version>
+      </dependency>
       <dependency>
         <groupId>org.gwtproject.dom</groupId>
         <artifactId>gwt-dom</artifactId>
-        <version>1.0.0-RC1</version>
+        <version>${gwt.module.dom}</version>
       </dependency>
+            <dependency>
+              <groupId>org.gwtproject.editor</groupId>
+              <artifactId>gwt-editor</artifactId>
+              <version>${gwt.module.editor}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.gwtproject.editor</groupId>
+              <artifactId>gwt-editor-processor</artifactId>
+              <version>${gwt.module.editor}</version>
+              <scope>provided</scope>
+            </dependency>
+            <dependency>
+              <groupId>org.gwtproject.editor</groupId>
+              <artifactId>gwt-editor-processor</artifactId>
+              <version>${gwt.module.editor}</version>
+              <scope>provided</scope>
+            </dependency>
+            <dependency>
+              <groupId>org.gwtproject.event</groupId>
+              <artifactId>gwt-event</artifactId>
+              <version>${gwt.module.event}</version>
+            </dependency>
 
-      <!-- gwt-dom-style-definitions -->
-      <dependency>
-        <groupId>org.gwtproject.dom</groupId>
-        <artifactId>gwt-dom-style-definitions</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-animation &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.animation</groupId>-->
+      <!--        <artifactId>gwt-animation</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+      <!--      -->
+      <!--      &lt;!&ndash; gwt-aria &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.aria</groupId>-->
+      <!--        <artifactId>gwt-aria</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+      <!--      &lt;!&ndash; gwt-event &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.event</groupId>-->
+      <!--        <artifactId>gwt-event-compat</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.event</groupId>-->
+      <!--        <artifactId>gwt-event-legacy</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.event</groupId>-->
+      <!--        <artifactId>gwt-event-logical</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-editor -->
-      <dependency>
-        <groupId>org.gwtproject.editor</groupId>
-        <artifactId>gwt-editor</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.editor</groupId>
-        <artifactId>gwt-editor-processor</artifactId>
-        <version>1.0.0-RC1</version>
-        <scope>provided</scope>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-event-dom &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.event</groupId>-->
+      <!--        <artifactId>gwt-event-dom</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-event -->
-      <dependency>
-        <groupId>org.gwtproject.event</groupId>
-        <artifactId>gwt-event</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.event</groupId>
-        <artifactId>gwt-event-compat</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.event</groupId>
-        <artifactId>gwt-event-legacy</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.event</groupId>
-        <artifactId>gwt-event-logical</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-geo-location &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.user.geo-location</groupId>-->
+      <!--        <artifactId>gwt-geo-location</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-event-dom -->
-      <dependency>
-        <groupId>org.gwtproject.event</groupId>
-        <artifactId>gwt-event-dom</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-history &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.user.history</groupId>-->
+      <!--        <artifactId>gwt-history</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-geo-location -->
-      <dependency>
-        <groupId>org.gwtproject.user.geo-location</groupId>
-        <artifactId>gwt-geo-location</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-http &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.http</groupId>-->
+      <!--        <artifactId>gwt-http</artifactId>-->
+      <!--        <version>1.0.0-RC2</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-history -->
-      <dependency>
-        <groupId>org.gwtproject.user.history</groupId>
-        <artifactId>gwt-history</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-json &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.json</groupId>-->
+      <!--        <artifactId>gwt-json</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-http -->
-      <dependency>
-        <groupId>org.gwtproject.http</groupId>
-        <artifactId>gwt-http</artifactId>
-        <version>1.0.0-RC2</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-jsonp &ndash;&gt;-->
+      <!--&lt;!&ndash;      <dependency>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <groupId>org.gwtproject.jsonp</groupId>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <artifactId>gwt-jsonp</artifactId>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <version>HEAD-SNAPSHOT</version>&ndash;&gt;-->
+      <!--&lt;!&ndash;      </dependency>&ndash;&gt;-->
 
-      <!-- gwt-json -->
-      <dependency>
-        <groupId>org.gwtproject.json</groupId>
-        <artifactId>gwt-json</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-layout &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.layout</groupId>-->
+      <!--        <artifactId>gwt-layout</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-jsonp -->
+      <!--      &lt;!&ndash; gwt-editor &ndash;&gt;-->
 <!--      <dependency>-->
-<!--        <groupId>org.gwtproject.jsonp</groupId>-->
-<!--        <artifactId>gwt-jsonp</artifactId>-->
-<!--        <version>HEAD-SNAPSHOT</version>-->
+      <!--        <groupId>org.gwtproject.place</groupId>-->
+      <!--        <artifactId>gwt-places</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
 <!--      </dependency>-->
-
-      <!-- gwt-layout -->
-      <dependency>
-        <groupId>org.gwtproject.layout</groupId>
-        <artifactId>gwt-layout</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-editor -->
-      <dependency>
-        <groupId>org.gwtproject.place</groupId>
-        <artifactId>gwt-places</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.place</groupId>
-        <artifactId>gwt-places-processor</artifactId>
-        <version>1.0.0-RC1</version>
-        <scope>provided</scope>
-      </dependency>
-
-      <!-- gwt-regexp -->
-      <dependency>
-        <groupId>org.gwtproject.regexp</groupId>
-        <artifactId>gwt-regexp</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-safecss -->
-      <dependency>
-        <groupId>org.gwtproject.safecss</groupId>
-        <artifactId>gwt-safecss</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-safehtml -->
-      <dependency>
-        <groupId>org.gwtproject.safehtml</groupId>
-        <artifactId>gwt-safehtml</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.gwtproject.safehtml</groupId>
-        <artifactId>gwt-safehtml-processor</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
-
-      <!-- gwt-storage -->
 <!--      <dependency>-->
-<!--        <groupId>org.gwtproject.storage</groupId>-->
-<!--        <artifactId>gwt-storage</artifactId>-->
+      <!--        <groupId>org.gwtproject.place</groupId>-->
+      <!--        <artifactId>gwt-places-processor</artifactId>-->
 <!--        <version>1.0.0-RC1</version>-->
+      <!--        <scope>provided</scope>-->
 <!--      </dependency>-->
 
-      <!-- gwt-timer -->
-      <dependency>
-        <groupId>org.gwtproject.timer</groupId>
-        <artifactId>gwt-timer</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-regexp &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.regexp</groupId>-->
+      <!--        <artifactId>gwt-regexp</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-typedarrays -->
-      <dependency>
-        <groupId>org.gwtproject.typedarrays</groupId>
-        <artifactId>gwt-typedarrays</artifactId>
-        <version>1.0.0-RC2</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-safecss &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.safecss</groupId>-->
+      <!--        <artifactId>gwt-safecss</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-window -->
-      <dependency>
-        <groupId>org.gwtproject.window</groupId>
-        <artifactId>gwt-window</artifactId>
-        <version>1.0.0-RC2</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-safehtml &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.safehtml</groupId>-->
+      <!--        <artifactId>gwt-safehtml</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.safehtml</groupId>-->
+      <!--        <artifactId>gwt-safehtml-processor</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
 
-      <!-- gwt-typedarrays -->
-      <dependency>
-        <groupId>org.gwtproject.xhr</groupId>
-        <artifactId>gwt-xhr</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-storage &ndash;&gt;-->
+      <!--&lt;!&ndash;      <dependency>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <groupId>org.gwtproject.storage</groupId>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <artifactId>gwt-storage</artifactId>&ndash;&gt;-->
+      <!--&lt;!&ndash;        <version>1.0.0-RC1</version>&ndash;&gt;-->
+      <!--&lt;!&ndash;      </dependency>&ndash;&gt;-->
 
-      <!-- gwt-typedarrays -->
-      <dependency>
-        <groupId>org.gwtproject.xml</groupId>
-        <artifactId>gwt-xml</artifactId>
-        <version>1.0.0-RC1</version>
-      </dependency>
+      <!--      &lt;!&ndash; gwt-timer &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.timer</groupId>-->
+      <!--        <artifactId>gwt-timer</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+
+      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.typedarrays</groupId>-->
+      <!--        <artifactId>gwt-typedarrays</artifactId>-->
+      <!--        <version>1.0.0-RC2</version>-->
+      <!--      </dependency>-->
+
+      <!--      &lt;!&ndash; gwt-window &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.window</groupId>-->
+      <!--        <artifactId>gwt-window</artifactId>-->
+      <!--        <version>1.0.0-RC2</version>-->
+      <!--      </dependency>-->
+
+      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.xhr</groupId>-->
+      <!--        <artifactId>gwt-xhr</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
+
+      <!--      &lt;!&ndash; gwt-typedarrays &ndash;&gt;-->
+      <!--      <dependency>-->
+      <!--        <groupId>org.gwtproject.xml</groupId>-->
+      <!--        <artifactId>gwt-xml</artifactId>-->
+      <!--        <version>1.0.0-RC1</version>-->
+      <!--      </dependency>-->
     </dependencies>
   </dependencyManagement>
+
+  <!-- Alas, need to include snapshot reference since otherwise can not find
+       snapshot of parent... -->
+  <repositories>
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases><enabled>false</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+  </repositories>
 </project>

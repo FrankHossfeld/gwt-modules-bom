@@ -13,7 +13,6 @@ release.properties
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
